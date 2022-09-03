@@ -1,0 +1,50 @@
+<h1 mat-dialog-title>Add Student</h1>
+<div mat-dialog-content>
+  <form [formGroup]="studentForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Student Name</mat-label>
+      <input
+        matInput
+        placeholder="Enter student name"
+        name="studentName"
+        formControlName="studentName"
+      />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Student Email</mat-label>
+      <input matInput placeholder="Enter email" name="email" formControlName='email' />
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Major</mat-label>
+      <mat-select placeholder="Select major" name="major" formControlName='major'>
+        <mat-option value="Computer Science">Computer Science</mat-option>
+        <mat-option value="Software Engineer">Software Engineer</mat-option>
+        <mat-option value="Marketing">Marketing</mat-option>
+        <mat-option value="Electronic">Electronic</mat-option>
+        <mat-option value="Civil Engineer">Civil Engineer</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Choose a date</mat-label>
+      <input matInput [matDatepicker]="picker" name="date" formControlName='date' />
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <button
+      type="submit"
+      [disabled]="studentForm.invalid"
+      mat-raised-button
+      color="primary" (click)="onSubmit()"
+    >
+      {{actionBtn}}
+    </button>
+    <button
+      style="margin-left: 8px"
+      mat-raised-button
+      color="warn"
+      mat-dialog-close
+    >
+      Close
+    </button>
+  </form>
+</div>

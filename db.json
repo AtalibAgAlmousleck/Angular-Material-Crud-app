@@ -1,0 +1,42 @@
+{
+  "students": [
+    {
+      "studentName": "Atalib Ag Almousleck",
+      "email": "almouslacka@gmail.com",
+      "major": "Software Engineer",
+      "date": "1997-01-09T16:00:00.000Z",
+      "id": 1
+    },
+    {
+      "studentName": "Nana",
+      "email": "nana@gmail.com",
+      "major": "Civil Engineer",
+      "date": "2022-08-25T16:00:00.000Z",
+      "id": 4
+    },
+    {
+      "studentName": "Nasra",
+      "email": "nasra@gmail.com",
+      "major": "Marketing",
+      "date": "2022-09-05T16:00:00.000Z",
+      "id": 5
+    },
+    {
+      "studentName": "Benjamin",
+      "email": "benji@gmail.com",
+      "major": "Software Engineer",
+      "date": "2022-09-25T16:00:00.000Z",
+      "id": 6
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
